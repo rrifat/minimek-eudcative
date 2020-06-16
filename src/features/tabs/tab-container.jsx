@@ -1,5 +1,5 @@
 import React from "react";
-import TabBar from "./tab-bar";
+import TabBar from "./tab-bar.jsx";
 
 const TabContainer = (props) => {
   const { tabs = [{ name: null }] } = props;
@@ -8,7 +8,7 @@ const TabContainer = (props) => {
   const onTabClick = (name) => {
     setCurrentTab(name);
   };
-  
+
   return <TabBar tabs={tabs} onTabClick={onTabClick} currentTab={currentTab} />;
 };
 
